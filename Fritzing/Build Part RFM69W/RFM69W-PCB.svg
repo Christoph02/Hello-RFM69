@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   x="0in"
+   y="0in"
+   width="0.740444in"
+   height="0.708653in"
+   viewBox="0 0 53.312 51.023"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="RFM69W-PCB.svg"
+   inkscape:label="copper">
+  <metadata
+     id="metadata45">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs43" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     id="namedview41"
+     showgrid="false"
+     inkscape:zoom="3.700291"
+     inkscape:cx="58.706438"
+     inkscape:cy="31.889384"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <rect
+     style="fill:#f7bd10;stroke-width:0"
+     id="rect4213"
+     width="5.441"
+     y="43.390049"
+     x="46.598999"
+     height="3.586" />
+  <rect
+     style="fill:#f7bd10;stroke-width:0"
+     id="rect4215"
+     width="5.441"
+     y="43.390049"
+     x="1.02"
+     height="3.586" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="3.62361"
+     width="5.441"
+     id="connector13pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.589"
+     x="46.598999"
+     y="9.2936172"
+     width="5.441"
+     id="connector12pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="14.962607"
+     width="5.441"
+     id="connector11pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="20.632603"
+     width="5.441"
+     id="connector10pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="26.301601"
+     width="5.441"
+     id="connector9pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="31.970633"
+     width="5.441"
+     id="connector8pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="46.598999"
+     y="37.638634"
+     width="5.441"
+     id="connector7pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="37.638634"
+     width="5.441"
+     id="connector6pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="31.970633"
+     width="5.441"
+     id="connector5pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="26.301601"
+     width="5.441"
+     id="connector4pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="20.632603"
+     width="5.441"
+     id="connector3pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="14.962607"
+     width="5.441"
+     id="connector2pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.589"
+     x="1.02"
+     y="9.2936172"
+     width="5.441"
+     id="connector1pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <rect
+     height="3.586"
+     x="1.02"
+     y="3.62361"
+     width="5.441"
+     id="connector0pin"
+     style="fill:#f7bd10;stroke-width:0" />
+  <g
+     id="copper0" />
+  <rect
+     height="44.92289"
+     x="3.8534052"
+     y="2.581243"
+     width="45.35519"
+     id="rect25"
+     style="fill:none;stroke:#ffffff;stroke-width:0.24881224" />
+  <ellipse
+     cx="5.4700947"
+     cy="3.927953"
+     id="circle27"
+     style="fill:none;stroke:#ffffff;stroke-width:0.25235948"
+     rx="1.5619189"
+     ry="1.591706" />
+  <g
+     id="g29"
+     transform="matrix(0.99994802,0,0,1.0190179,0.00137914,-0.70450241)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:32.00001907px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="9.5127707"
+     y="44.96944"
+     id="text4279"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4281"
+       x="9.5127707"
+       y="44.96944"
+       style="-inkscape-font-specification:'Courier, Normal';font-family:Courier;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:4.00000228px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">RFM69W</tspan></text>
+</svg>

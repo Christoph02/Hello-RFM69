@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.740444in' height='0.708653in' viewBox='0 0 53.312 51.023' >
+<g partID='854114950'><g xmlns="http://www.w3.org/2000/svg" id="copper1">
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="7.299" width="5.441" stroke-width="0" id="connector13pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.589" x="46.599" fill="#F7BD10" y="12.969" width="5.441" stroke-width="0" id="connector12pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="18.638" width="5.441" stroke-width="0" id="connector11pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="24.308" width="5.441" stroke-width="0" id="connector10pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="29.977" width="5.441" stroke-width="0" id="connector9pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="35.646" width="5.441" stroke-width="0" id="connector8pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="46.599" fill="#F7BD10" y="41.314" width="5.441" stroke-width="0" id="connector7pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="41.314" width="5.441" stroke-width="0" id="connector6pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="35.646" width="5.441" stroke-width="0" id="connector5pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="29.977" width="5.441" stroke-width="0" id="connector4pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="24.308" width="5.441" stroke-width="0" id="connector3pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="18.638" width="5.441" stroke-width="0" id="connector2pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.589" x="1.02" fill="#F7BD10" y="12.969" width="5.441" stroke-width="0" id="connector1pin"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.586" x="1.02" fill="#F7BD10" y="7.299" width="5.441" stroke-width="0" id="connector0pin"/>
+ <g xmlns="http://www.w3.org/2000/svg" id="copper0"/>
+</g>
+</g><g partID='854114951'><g xmlns="http://www.w3.org/2000/svg" id="silkscreen">
+ <rect xmlns="http://www.w3.org/2000/svg" height="45.354" x="3.854" fill="none" y="3.014" stroke="#FFFFFF" width="45.354" stroke-width="0.25"/>
+ <circle xmlns="http://www.w3.org/2000/svg" cx="5.469" r="1.562" fill="none" stroke="#FFFFFF" cy="4.546" stroke-width="0.25"/>
+ <g xmlns="http://www.w3.org/2000/svg">
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M7.648,44.763c0.176,-0.032,0.432,-0.06,0.668,-0.06c0.372,0,0.615,0.072,0.779,0.221c0.132,0.119,0.212,0.307,0.212,0.519c0,0.352,-0.227,0.587,-0.504,0.684l0,0.015c0.201,0.069,0.325,0.264,0.392,0.544c0.0879999,0.375,0.152,0.636,0.208,0.736l-0.36,0c-0.044,-0.08,-0.104,-0.308,-0.176,-0.644c-0.08,-0.372,-0.228,-0.512,-0.543,-0.523L7.996,46.255l0,1.167L7.648,47.422L7.648,44.763zM7.996,45.989l0.355,0c0.372,0,0.605,-0.203,0.605,-0.512c0,-0.351,-0.252,-0.499,-0.62,-0.499c-0.168,0,-0.281,0.012,-0.344,0.024L7.996,45.989L7.996,45.989z" stroke="#FFFFFF" stroke-width="0.25"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M9.79599,44.727l1.451,0l0,0.292l-1.099,0l0,0.896l1.015,0l0,0.287l-1.015,0l0,1.22L9.79599,47.422L9.79599,44.727z" stroke="#FFFFFF" stroke-width="0.25"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M13.947,46.237c-0.021,-0.376,-0.044,-0.831,-0.044,-1.163l-0.008,0c-0.0989999,0.312,-0.204,0.651,-0.34,1.023l-0.479,1.308l-0.264,0l-0.44,-1.283c-0.128,-0.384,-0.229,-0.729,-0.308,-1.048l-0.008,0c-0.011,0.336,-0.028,0.783,-0.055,1.191l-0.069,1.152l-0.331,0l0.188,-2.691l0.444,0l0.459,1.303c0.112,0.332,0.2,0.628,0.271,0.908l0.011,0c0.069,-0.272,0.168,-0.568,0.288,-0.908l0.479,-1.303l0.444,0l0.168,2.691L14.01,47.417L13.947,46.237z" stroke="#FFFFFF" stroke-width="0.25"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M15.531,45.15l-0.008,0l-0.452,0.243l-0.068,-0.271l0.568,-0.304l0.3,0l0,2.599l-0.34,0L15.531,45.15z" stroke="#FFFFFF" stroke-width="0.25"/>
+  <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M16.819,47.421l0,-0.216l0.276,-0.268c0.661,-0.632,0.967999,-0.971,0.967999,-1.359c0,-0.264,-0.124,-0.508,-0.515,-0.508c-0.233,0,-0.432,0.12,-0.552,0.22l-0.109,-0.248c0.176,-0.146,0.436,-0.264,0.729,-0.264c0.562,0,0.795,0.384,0.795,0.756c0,0.479,-0.348,0.867,-0.895999,1.396l-0.204,0.189l0,0.008l1.163,0l0,0.292L16.819,47.421L16.819,47.421z" stroke="#FFFFFF" stroke-width="0.25"/>
+ </g>
+</g>
+</g></svg>
