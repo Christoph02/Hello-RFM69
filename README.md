@@ -1,11 +1,13 @@
 # Project: RFM69W, connected to Arduino   
 ## Description
-### Data Transfer Example with RFM69W using two Arduinos
+### Data Transfer Example with RFM69W using two Arduinos  
+Send data from Arduino Pro Mini to Arduino Uno using RFM69W at 433 Mhz  
+RFM69 library and example code by Felix Rusu - felix@lowpowerlab.com  
+#  
 Clients:
 - putty serial monitor
 - arduino serial monitor
 
-1. Send data from Arduino Pro Mini to Arduino Uno using RFM69W at 433 Mhz
 
 ## Hardware:
 - Arduino Pro Mini
@@ -20,17 +22,19 @@ Clients:
 ### Install and run project
   Download [ZIP](https://gitlab.fritz.box/Smarthome/Hello-BMP085/repository/archive.zip?ref=master)  
   Extract ZIP  
-  Using Arduino.exe or Fritzing to upload Sketches to Arduino:
+  Start Arduino.exe to upload Sketches to Arduino:  
+  [import RFM69 Library](https://travis-ci.org/LowPowerLab/RFM69)
   ```
   Upload Sketch "\Arduino\Transmitter\Transmitter.ino" to Arduino Pro Mini
   Upload Sketch "\Arduino\Receiver\Receiver.ino" to Arduino UNO
   ```
-  
     
 ## Software used for Project
 ### Arduino
 [ARDUINO] (https://www.arduino.cc/en/Main/Software)
-[Putty] (http://portableapps.com/de/apps/internet/putty_portable)
+#### RFM69 Library  [![Build Status](https://travis-ci.org/LowPowerLab/RFM69.svg)](https://travis-ci.org/LowPowerLab/RFM69)
+
+[Putty (serial monitor)] (http://portableapps.com/de/apps/internet/putty_portable)  
 
 ---
 ## CE (Community Edition) Software for Development 
