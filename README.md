@@ -1,7 +1,6 @@
 # Project: RFM69W, connected to Arduino   
 ## Description
 ### Data Transfer Example with RFM69W using two Arduinos
-```
 Clients:
 - putty serial monitor
 - arduino serial monitor
