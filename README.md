@@ -14,7 +14,7 @@ Clients:
 - 2 x RFM69W-433S2 transceiver
 
 ## Setup
-![Frizzing Setup](mydocu/images/project-setup_pcb.png?raw=true)
+![Frizzing Setup](mydocu/images/project-setup_breadboard.png?raw=true)
   
 ## Installation
 ### Install and run project
