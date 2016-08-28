@@ -104,7 +104,7 @@ void loop() {
       Serial.print(theData.uptime);
       Serial.print(" temp=");
       Serial.print(theData.temp);
-      Serial.print(" temp=");
+      Serial.print(" humidity=");
       Serial.print(theData.hum);
     }
     

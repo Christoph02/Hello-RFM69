@@ -131,6 +131,9 @@ void loop() {
     Serial.println();
     Blink(LED,3);
     lastPeriod=currPeriod;
+
+    radio.receiveDone(); //put radio in RX mode
+    Serial.flush(); //make sure all serial data is clocked out before sleeping the MCU
   }
 }
 
