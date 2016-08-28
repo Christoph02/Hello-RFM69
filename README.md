@@ -50,4 +50,9 @@ Clients:
 [Gitlab-CE on Docker](https://hub.docker.com/r/gitlab/gitlab-ce/)
 
 ## References
+#### example project
 [Uber](http://www.instructables.com/id/Uber-Home-Automation-w-Arduino-Pi/?ALLSTEPS)  Home Automation w/ Arduino & Pi
+#### RFM69 Guide
+[RFM69HCW Hookup Guide ](https://learn.sparkfun.com/tutorials/rfm69hcw-hookup-guide/how-it-works)
+#### RFM69 Datasheet
+[RFM69W](http://www.hoperf.com/upload/rf/RFM69W-V1.3.pdf) ISM TRANSCEIVER Module
