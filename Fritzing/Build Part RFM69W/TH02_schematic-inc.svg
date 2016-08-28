@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   x="0in"
+   y="0in"
+   width="14.660572mm"
+   height="10.8mm"
+   viewBox="0 0 41.557531 30.614175"
+   id="svg8078"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="TH02_schematic-inc.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     id="namedview40"
+     showgrid="false"
+     inkscape:zoom="6.1670781"
+     inkscape:cx="25.973454"
+     inkscape:cy="18.971707"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8078" />
+  <metadata
+     id="metadata8171">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8169" />
+  <rect
+     height="30.755829"
+     x="15.361274"
+     y="-0.017976325"
+     width="27.232792"
+     id="rect8083"
+     style="fill:none;stroke:#000000;stroke-width:0.36518475;stroke-linecap:round;stroke-linejoin:round" />
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.1"
+     id="label"
+     x="31.396919"
+     y="14.582708"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.42368245px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke:none">
+    <tspan
+       id="tspan3397"
+       x="31.396919"
+       y="14.582708">HopeRF</tspan>
+  </text>
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.2"
+     id="text8086"
+     x="31.396919"
+     y="18.006393"
+     style="font-size:3.42370044px;font-family:'Droid Sans';text-anchor:middle;fill:#000000;stroke:none;-inkscape-font-specification:'Droid Sans, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-align:center;writing-mode:lr;line-height:125%;"
+     sodipodi:linespacing="125%">
+    <tspan
+       sodipodi:role="line"
+       id="tspan3368">TH02</tspan>
+  </text>
+  <line
+     y2="5.0199623"
+     x2="14.709086"
+     y1="5.0199623"
+     x1="0.65705931"
+     id="line8092"
+     style="fill:none;stroke:#787878;stroke-width:0.68473452;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     height="0.6697073"
+     gorn="0.2.6"
+     id="connector14pin"
+     connectorName="VIN"
+     x="0.30701038"
+     y="4.6851072"
+     width="14.402075"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.7"
+     id="connector14terminal"
+     x="0"
+     y="6.85"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.8"
+     id="label14"
+     x="15.755752"
+     y="5.8173208"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.42368245px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#8c8c8c;stroke:none">
+    <tspan
+       id="tspan3399">VDD</tspan>
+  </text>
+  <line
+     y2="11.908401"
+     x2="14.709086"
+     y1="11.908401"
+     x1="0.65705931"
+     id="line8097"
+     style="fill:none;stroke:#787878;stroke-width:0.68473452;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     height="0.6697073"
+     gorn="0.2.10"
+     id="connector15pin"
+     connectorName="GND"
+     x="0.30701038"
+     y="11.573547"
+     width="14.402075"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.11"
+     id="connector15terminal"
+     x="0"
+     y="14.05"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.12"
+     id="label15"
+     x="15.755752"
+     y="12.860344"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.42368245px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#8c8c8c;stroke:none">
+    <tspan
+       y="12.860344"
+       x="15.755752"
+       id="tspan3365">SDA</tspan>
+  </text>
+  <line
+     y2="18.796833"
+     x2="14.709086"
+     y1="18.796833"
+     x1="0.65705931"
+     id="line8102"
+     style="fill:none;stroke:#787878;stroke-width:0.68473452;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     height="0.6697073"
+     gorn="0.2.14"
+     id="connector16pin"
+     connectorName="EN"
+     x="0.30701038"
+     y="18.461979"
+     width="14.402075"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.15"
+     id="connector16terminal"
+     x="0"
+     y="21.25"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.16"
+     id="label16"
+     x="15.755752"
+     y="19.903343"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.42368245px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#8c8c8c;stroke:none">
+    <tspan
+       y="19.903343"
+       x="15.755752"
+       id="tspan3367">SCK</tspan>
+  </text>
+  <line
+     y2="25.685272"
+     x2="14.709086"
+     y1="25.685272"
+     x1="0.65705931"
+     id="line8107"
+     style="fill:none;stroke:#787878;stroke-width:0.68473452;stroke-linecap:round;stroke-linejoin:round" />
+  <rect
+     height="0.6697073"
+     gorn="0.2.18"
+     id="connector17pin"
+     connectorName="DIO0"
+     x="0.30701038"
+     y="25.350418"
+     width="14.402075"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.19"
+     id="connector17terminal"
+     x="0"
+     y="28.45"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <text
+     transform="scale(1.0224385,0.97805394)"
+     font-size="3.5"
+     gorn="0.2.20"
+     id="label17"
+     x="15.755752"
+     y="26.946346"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.42368245px;line-height:125%;font-family:'Droid Sans';-inkscape-font-specification:'Droid Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#8c8c8c;stroke:none">
+    <tspan
+       y="26.946346"
+       x="15.755752"
+       id="tspan3369">GND</tspan>
+  </text>
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.23"
+     id="connector18terminal"
+     x="0"
+     y="35.65"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.27"
+     id="connector19terminal"
+     x="0"
+     y="42.85"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.31"
+     id="connector20terminal"
+     x="0"
+     y="50.05"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.35"
+     id="connector21terminal"
+     x="0"
+     y="57.25"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.39"
+     id="connector22terminal"
+     x="0"
+     y="64.45"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.43"
+     id="connector8terminal"
+     x="100.8"
+     y="6.85"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.47"
+     id="connector9terminal"
+     x="100.8"
+     y="14.05"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.51"
+     id="connector10terminal"
+     x="100.8"
+     y="21.25"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.55"
+     id="connector11terminal"
+     x="100.8"
+     y="28.45"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.59"
+     id="connector12terminal"
+     x="100.8"
+     y="35.65"
+     width="0"
+     style="fill:none;stroke-width:0" />
+  <g
+     transform="translate(-16.164507,7.1226538)"
+     height="0.699998"
+     gorn="0.2.63"
+     id="connector13terminal"
+     x="100.8"
+     y="42.85"
+     width="0"
+     style="fill:none;stroke-width:0" />
+</svg>

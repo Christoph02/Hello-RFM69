@@ -44,7 +44,7 @@
     #define FREQUENCY     RF69_433MHZ
     //#define FREQUENCY     RF69_868MHZ
     //#define FREQUENCY     RF69_915MHZ
-    #define ENCRYPTKEY    "sampleEncryptKey" //exactly the same 16 characters/bytes on all nodes!
+    #define ENCRYPTKEY    "7-R|6tITi;JQjw_m" //exactly the same 16 characters/bytes on all nodes!
     #define IS_RFM69HCW   false // set to 'true' if you are using an RFM69HCW module
      
     //*********************************************************************************************
@@ -59,10 +59,14 @@
      
      
     int16_t packetnum = 0;  // packet counter, we increment per xmission
+
+    float th02Trnd=0; //TH02 temperature rounded
+    float th02Hrnd=0; //TH02 humidity rounded
      
     RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN);
      
     void setup() {
+      TH02setup();
       while (!Serial); // wait until serial console is open, remove if not tethered to computer
       Serial.begin(SERIAL_BAUD);
      
@@ -93,6 +97,8 @@
      
     void loop() {
       delay(1000);  // Wait 1 second between transmits, could also 'sleep' here!
+
+      TH02run();
         
       char radiopacket[20] = "Hello World #";
       itoa(packetnum++, radiopacket+13, 10);

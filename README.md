@@ -5,20 +5,21 @@ Clients:
 - putty serial monitor
 - arduino serial monitor
 
-1. Send data from Arduino Pro Mini to Arduino Uno using RFM69W at 433 Mhz
+# Send TH02 sensor data from Arduino Pro Mini to Arduino Uno using RFM69W at 433 Mhz
 
 ## Hardware:
 - Arduino Pro Mini
 - Arduino UNO
 - FTDI Basic Breakout 5V/3.3V - Micro USB
 - 2 x RFM69W-433S2 transceiver
+- TH02 Humidity Module
 
 ## Setup
 ![Frizzing Setup](mydocu/images/project-setup_breadboard.png?raw=true)
   
 ## Installation
 ### Install and run project
-  Download [ZIP](https://gitlab.fritz.box/Smarthome/Hello-BMP085/repository/archive.zip?ref=master)  
+  Download [ZIP](https://gitlab.fritz.box/Smarthome/Hello-RFM69/repository/archive.zip?ref=master)  
   Extract ZIP  
   Using Arduino.exe or Fritzing to upload Sketches to Arduino:
   ```

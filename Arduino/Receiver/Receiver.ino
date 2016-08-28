@@ -43,7 +43,7 @@
 #define FREQUENCY     RF69_433MHZ
 //#define FREQUENCY     RF69_868MHZ
 //#define FREQUENCY      RF69_915MHZ
-#define ENCRYPTKEY     "sampleEncryptKey" //exactly the same 16 characters/bytes on all nodes!
+#define ENCRYPTKEY     "7-R|6tITi;JQjw_m" //exactly the same 16 characters/bytes on all nodes!
 #define IS_RFM69HCW    false // set to 'true' if you are using an RFM69HCW module
 
 //*********************************************************************************************
@@ -96,7 +96,7 @@ void loop() {
     //print message received to serial
     Serial.print('[');Serial.print(radio.SENDERID);Serial.print("] ");
     Serial.print((char*)radio.DATA);
-    Serial.print("   [RX_RSSI:");Serial.print(radio.RSSI);Serial.print("]");
+    Serial.print("   [RX_RSSI:");Serial.print(radio.RSSI);Serial.println("]");
 
     //check if received message contains Hello World
     if (strstr((char *)radio.DATA, "Hello World"))
