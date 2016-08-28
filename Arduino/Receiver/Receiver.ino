@@ -1,45 +1,10 @@
-/* RFM69 library and code by Felix Rusu - felix@lowpowerlab.com
-// Get libraries at: https://github.com/LowPowerLab/
-// Make sure you adjust the settings in the configuration section below !!!
-// **********************************************************************************
-// Copyright Felix Rusu, LowPowerLab.com
-// Library and code by Felix Rusu - felix@lowpowerlab.com
-// **********************************************************************************
-// License
-// **********************************************************************************
-// This program is free software; you can redistribute it 
-// and/or modify it under the terms of the GNU General    
-// Public License as published by the Free Software       
-// Foundation; either version 3 of the License, or        
-// (at your option) any later version.                    
-//                                                        
-// This program is distributed in the hope that it will   
-// be useful, but WITHOUT ANY WARRANTY; without even the  
-// implied warranty of MERCHANTABILITY or FITNESS FOR A   
-// PARTICULAR PURPOSE. See the GNU General Public        
-// License for more details.                              
-//                                                        
-// You should have received a copy of the GNU General    
-// Public License along with this program.
-// If not, see <http://www.gnu.org/licenses></http:>.
-//                                                        
-// Licence can be viewed at                               
-// http://www.gnu.org/licenses/gpl-3.0.txt
-//
-// Please maintain this license information along with authorship
-// and copyright notices in any redistribution of this code
-// **********************************************************************************/
-
 #include <RFM69.h>    //get it here: https://www.github.com/lowpowerlab/rfm69
 #include <SPI.h>
 
-//*********************************************************************************************
-// *********** IMPORTANT SETTINGS - YOU MUST CHANGE/ONFIGURE TO FIT YOUR HARDWARE *************
-//*********************************************************************************************
-#define NETWORKID     100  //the same on all nodes that talk to each other
-#define NODEID        1  
+#define NETWORKID     100  //same networkid on all nodes
+#define NODEID        1    //distinct ID on each device
 
-//Match frequency to the hardware version of the radio
+//frequency of the hardware version radio
 #define FREQUENCY     RF69_433MHZ
 //#define FREQUENCY     RF69_868MHZ
 //#define FREQUENCY      RF69_915MHZ
@@ -56,9 +21,18 @@
 
 #define LED           13  // onboard blinky
 
-int16_t packetnum = 0;  // packet counter, we increment per xmission
+uint16_t packetnum = 0;  // packet counter, we increment per xmission
 
 RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN);
+
+typedef struct {
+  int           nodeId; //store this nodeId
+  uint16_t       num;    //packet number
+  unsigned long uptime; //uptime in ms
+  float         temp;   //temperature in °C
+  float         hum;   //humidity in %
+} Payload;
+Payload theData;
 
 void setup() {
 //  while (!Serial); // wait until serial console is open, remove if not tethered to computer
@@ -92,23 +66,33 @@ void setup() {
 void loop() {
   //check if something was received (could be an interrupt from the radio)
   if (radio.receiveDone())
-  {
-    //print message received to serial
+  { 
     Serial.print('[');Serial.print(radio.SENDERID);Serial.print("] ");
-    Serial.print((char*)radio.DATA);
     Serial.print("   [RX_RSSI:");Serial.print(radio.RSSI);Serial.println("]");
-
-    //check if received message contains Hello World
-    if (strstr((char *)radio.DATA, "Hello World"))
+    if (radio.DATALEN != sizeof(Payload))
+      //print unstructed message received to serial
+      Serial.print((char*)radio.DATA);
+    else
     {
-      //check if sender wanted an ACK
+      theData = *(Payload*)radio.DATA; //assume radio.DATA actually contains our struct and not something else
+      Serial.print(" nodeId=");
+      Serial.print(theData.nodeId);
+      Serial.print(" packetnum=");
+      Serial.print(theData.num);
+      Serial.print(" uptime=");
+      Serial.print(theData.uptime);
+      Serial.print(" temp=");
+      Serial.print(theData.temp);
+      Serial.print(" humidity=");
+      Serial.print(theData.hum);
+
       if (radio.ACKRequested())
       {
         radio.sendACK();
         Serial.println(" - ACK sent");
       }
       Blink(LED, 40, 3); //blink LED 3 times, 40ms between blinks
-    }  
+    }
   }
 
   radio.receiveDone(); //put radio in RX mode
