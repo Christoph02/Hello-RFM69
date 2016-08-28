@@ -1,6 +1,6 @@
 #include <RFM69.h>
 #include <SPI.h>
-#include <SPIFlash.h>
+//#include <SPIFlash.h>
 
 #define NODEID      1
 #define NETWORKID   100
@@ -11,7 +11,7 @@
 #define ACK_TIME    30  // # of ms to wait for an ack
 
 RFM69 radio;
-SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
+//SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
 bool promiscuousMode = false; //set to 'true' to sniff all packets on the same network
 
 typedef struct {
@@ -32,14 +32,18 @@ void setup() {
   char buff[50];
   sprintf(buff, "\nListening at %d Mhz...", FREQUENCY==RF69_433MHZ ? 433 : FREQUENCY==RF69_868MHZ ? 868 : 915);
   Serial.println(buff);
+
+/*  
   if (flash.initialize())
     Serial.println("SPI Flash Init OK!");
   else
     Serial.println("SPI Flash Init FAIL! (is chip present?)");
+*/
 }
 
 byte ackCount=0;
 void loop() {
+/*  
   //process any serial input
   if (Serial.available() > 0)
   {
@@ -83,6 +87,7 @@ void loop() {
       Serial.println(jedecid, HEX);
     }
   }
+*/
 
   if (radio.receiveDone())
   {

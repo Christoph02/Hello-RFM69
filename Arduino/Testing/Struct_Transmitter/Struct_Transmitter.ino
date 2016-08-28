@@ -14,7 +14,7 @@
 int TRANSMITPERIOD = 300; //transmit a packet to gateway so often (in ms)
 byte sendSize=0;
 boolean requestACK = false;
-SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
+//SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
 RFM69 radio;
 
 typedef struct {
@@ -36,16 +36,19 @@ void setup() {
   char buff[50];
   sprintf(buff, "\nTransmitting at %d Mhz...", FREQUENCY==RF69_433MHZ ? 433 : FREQUENCY==RF69_868MHZ ? 868 : 915);
   Serial.println(buff);
-  
+
+  /*
   if (flash.initialize())
     Serial.println("SPI Flash Init OK!");
   else
     Serial.println("SPI Flash Init FAIL! (is chip present?)");
+*/
   TH02setup(); //setup for TH02 temperature and humidity sensor
 }
 
 long lastPeriod = -1;
 void loop() {
+/*  
   //process any serial input
   if (Serial.available() > 0)
   {
@@ -92,6 +95,7 @@ void loop() {
       Serial.println(jedecid, HEX);
     }
   }
+*/
 
   //check for any received packets
   if (radio.receiveDone())
@@ -114,7 +118,7 @@ void loop() {
   int currPeriod = millis()/TRANSMITPERIOD;
   if (currPeriod != lastPeriod)
   {
-    TH02run(); //get sensordate from TH02
+    TH02run(); //get sensordata from TH02
     //fill in the struct with new values
     theData.nodeId = NODEID;
     theData.uptime = millis();
@@ -129,11 +133,15 @@ void loop() {
       Serial.print(" ok!");
     else Serial.print(" nothing...");
     Serial.println();
+    if (radio.ACKRequested())
+    {
+      radio.sendACK();
+      Serial.print(" - ACK sent");
+      delay(10);
+    }
+    
     Blink(LED,3);
     lastPeriod=currPeriod;
-
-    radio.receiveDone(); //put radio in RX mode
-    Serial.flush(); //make sure all serial data is clocked out before sleeping the MCU
   }
 }
 
