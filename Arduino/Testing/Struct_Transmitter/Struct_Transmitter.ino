@@ -15,7 +15,16 @@ int TRANSMITPERIOD = 300; //transmit a packet to gateway so often (in ms)
 byte sendSize=0;
 boolean requestACK = false;
 //SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
-RFM69 radio;
+
+//added 5 lines (cj)
+#define RFM69_CS      10
+#define RFM69_IRQ     2
+#define RFM69_IRQN    0  // Pin 2 is IRQ 0!
+#define RFM69_RST     9
+#define IS_RFM69HCW    false // set to 'true' if you are using an RFM69HCW module
+
+//changed on line (cj)
+RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN); //RFM69 radio;
 
 typedef struct {
   int           nodeId; //store this nodeId
@@ -36,6 +45,13 @@ void setup() {
   char buff[50];
   sprintf(buff, "\nTransmitting at %d Mhz...", FREQUENCY==RF69_433MHZ ? 433 : FREQUENCY==RF69_868MHZ ? 868 : 915);
   Serial.println(buff);
+
+  // Hard Reset the RFM module
+  pinMode(RFM69_RST, OUTPUT);
+  digitalWrite(RFM69_RST, HIGH);
+  delay(100);
+  digitalWrite(RFM69_RST, LOW);
+  delay(100);  
 
   /*
   if (flash.initialize())

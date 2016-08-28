@@ -54,7 +54,7 @@
 #define RFM69_IRQN    0  // Pin 2 is IRQ 0!
 #define RFM69_RST     9
 
-#define LED           8  // onboard blinky
+#define LED           13  // onboard blinky
 
 int16_t packetnum = 0;  // packet counter, we increment per xmission
 

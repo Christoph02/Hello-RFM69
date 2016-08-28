@@ -55,7 +55,7 @@
     #define RFM69_IRQN    0  // Pin 2 is IRQ 0!
     #define RFM69_RST     9
      
-    #define LED           8  // onboard blinky
+    #define LED           13   // onboard blinky
      
      
     int16_t packetnum = 0;  // packet counter, we increment per xmission
@@ -64,7 +64,15 @@
     float th02Hrnd=0; //TH02 humidity rounded
      
     RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN);
-     
+
+    typedef struct {
+      int           nodeId; //store this nodeId
+      unsigned long uptime; //uptime in ms
+      float         temp;   //temperature in °C
+      float         hum;   //humidity in %
+    } Payload;
+    Payload theData;
+   
     void setup() {
       TH02setup();
       while (!Serial); // wait until serial console is open, remove if not tethered to computer
@@ -89,6 +97,8 @@
       radio.encrypt(ENCRYPTKEY);
       
       pinMode(LED, OUTPUT);
+
+      
       Serial.print("\nTransmitting at ");
       Serial.print(FREQUENCY==RF69_433MHZ ? 433 : FREQUENCY==RF69_868MHZ ? 868 : 915);
       Serial.println(" MHz");
@@ -96,8 +106,7 @@
      
      
     void loop() {
-      delay(1000);  // Wait 1 second between transmits, could also 'sleep' here!
-
+      delay(1000);  // Wait 1 second between transmits, could also 'sleep' here!+
       TH02run();
         
       char radiopacket[20] = "Hello World #";

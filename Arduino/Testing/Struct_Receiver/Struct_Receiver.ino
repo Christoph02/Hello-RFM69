@@ -6,11 +6,20 @@
 #define NETWORKID   100
 #define FREQUENCY   RF69_433MHZ //Match this with the version of your Moteino! (others: RF69_433MHZ, RF69_868MHZ)
 #define KEY         "7-R|6tITi;JQjw_m" //has to be same 16 characters/bytes on all nodes, not more not less!
-#define LED         9
+#define LED         13
 #define SERIAL_BAUD 115200
 #define ACK_TIME    30  // # of ms to wait for an ack
 
-RFM69 radio;
+//added 5 lines (cj)
+#define RFM69_CS      10
+#define RFM69_IRQ     2
+#define RFM69_IRQN    0  // Pin 2 is IRQ 0!
+#define RFM69_RST     9
+#define IS_RFM69HCW    false // set to 'true' if you are using an RFM69HCW module
+
+//changed on line (cj)
+RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN); //RFM69 radio;
+
 //SPIFlash flash(8, 0xEF30); //EF40 for 16mbit windbond chip
 bool promiscuousMode = false; //set to 'true' to sniff all packets on the same network
 
