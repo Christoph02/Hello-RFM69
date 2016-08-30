@@ -28,6 +28,7 @@ RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN); //RFM69 radio
 
 typedef struct {
   int           nodeId; //store this nodeId
+  int16_t       num;    //packet number
   unsigned long uptime; //uptime in ms
   float         temp;   //temperature in °C
   float         hum;   //humidity in %

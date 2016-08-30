@@ -1,8 +1,8 @@
 #include <RFM69.h>    //get it here: https://www.github.com/lowpowerlab/rfm69
 #include <SPI.h>
 
-#define NETWORKID     100  //same networkid on all nodes
-#define NODEID        1    //distinct ID on each device
+#define NETWORKID     100  //same networkID on all nodes
+#define NODEID        1    //unique nodeID 
 
 //frequency of the hardware version radio
 #define FREQUENCY     RF69_433MHZ

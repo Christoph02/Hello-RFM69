@@ -22,7 +22,7 @@
  
 #define LED           13   // onboard blinky
 
-int TRANSMITPERIOD = 2000; //transmit a packet to gateway so often (in ms)
+int TRANSMITPERIOD = 5000; //transmit a packet to gateway so often (in ms)
 long lastPeriod = -1; //
  
 uint16_t packetnum = 0;  // packet counter, we increment per xmission
@@ -74,8 +74,27 @@ void setup() {
  
  
 void loop() {
+
+  //check for any received packets
+  if (radio.receiveDone())
+  {
+    Serial.print('[');Serial.print(radio.SENDERID, DEC);Serial.print("] ");
+    for (byte i = 0; i < radio.DATALEN; i++)
+      Serial.print((char)radio.DATA[i]);
+    Serial.print("   [RX_RSSI:");Serial.print(radio.readRSSI());Serial.print("]");
+
+    if (radio.ACKRequested())
+    {
+      radio.sendACK();
+      Serial.print(" - ACK sent");
+      delay(10);
+    }
+    Blink(LED,5,3);
+    Serial.println();
+  }
   
-//  delay(1000);  // Wait 1 second between transmits, could also 'sleep' here!+
+  //transmit packet
+  //wait TRANSMITPERIOD between transmits
   int currPeriod = millis()/TRANSMITPERIOD;
   if (currPeriod != lastPeriod)
   {
