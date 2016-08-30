@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project: RFM69W, connected to Arduino   
 ## Description
 ### Data Transfer Example with RFM69W using two Arduinos
@@ -56,3 +57,4 @@ Clients:
 [RFM69HCW Hookup Guide ](https://learn.sparkfun.com/tutorials/rfm69hcw-hookup-guide/how-it-works)
 #### RFM69 Datasheet
 [RFM69W](http://www.hoperf.com/upload/rf/RFM69W-V1.3.pdf) ISM TRANSCEIVER Module
+
