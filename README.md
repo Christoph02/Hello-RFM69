@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Project: RFM69W, connected to Arduino   
 ## Description
 ### Data Transfer Example with RFM69W using two Arduinos
@@ -20,7 +19,7 @@ Clients:
   
 ## Installation
 ### Install and run project
-  Download [ZIP](https://gitlab.fritz.box/Smarthome/Hello-RFM69/repository/archive.zip?ref=master)  
+  Download [ZIP](https://gitlab.fritz.box/christoph02/Hello-RFM69/repository/archive.zip?ref=master)  
   Extract ZIP  
   Using Arduino.exe or Fritzing to upload Sketches to Arduino:
   ```
