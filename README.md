@@ -29,9 +29,9 @@ Clients:
   
     
 ## Software used for Project
-### Arduino
-[ARDUINO] (https://www.arduino.cc/en/Main/Software)
-[Putty] (http://portableapps.com/de/apps/internet/putty_portable)
+### Arduino   
+[ARDUINO](https://www.arduino.cc/en/Main/Software)   
+[Putty](http://portableapps.com/de/apps/internet/putty_portable)
 
 ---
 ## CE (Community Edition) Software for Development 
